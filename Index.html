@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en" data-theme="dark" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Arbab Mujtaba — Portfolio</title>
+  <meta name="description" content="Arbab Mujtaba — Computer Engineering student & developer. Projects in Java, Python, Networking, and more." />
+  <meta name="theme-color" content="#0f1221"/>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- accessibility skip link -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- HEADER / NAV -->
+  <header class="site-header" role="banner">
+    <nav class="nav container" role="navigation" aria-label="Primary">
+      <a class="brand" href="#" aria-label="Homepage — Arbab Mujtaba">
+        <span class="brand-mark" aria-hidden="true">AM</span>
+        <span class="brand-name">Arbab Mujtaba</span>
+      </a>
+
+      <!-- Desktop nav -->
+      <ul class="nav-list" id="nav-list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-pressed="false" aria-label="Toggle theme">
+          <!-- icons toggled by CSS/JS -->
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M6.76 4.84l-1.8-1.79L3.17 4.84 4.97 6.63 6.76 4.84zM1 13h3v-2H1v2zm10 9h2v-3h-2v3zm9-9v-2h-3v2h3zM17.24 4.84l1.8-1.79 1.79 1.79-1.8 1.79-1.79-1.79zM12 8a4 4 0 100 8 4 4 0 000-8zM6.76 19.16l-1.8 1.79-1.79-1.79 1.8-1.79 1.79 1.79zM21 13h3v-2h-3v2z" /></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M21.64 13.06A9 9 0 1110.94 2.36 7 7 0 0021.64 13.06z"/></svg>
+        </button>
+
+        <button id="menu-toggle" class="hamburger" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1 class="hero-title">Arbab Mujtaba</h1>
+          <p class="hero-sub">Computer Engineer • Creator • Vintage Soul</p>
+          <p class="hero-lead">I build practical software, explore networking, and capture life through a vintage lens.</p>
+
+          <div class="hero-ctas">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="resume.pdf" download>Download Resume</a>
+          </div>
+
+          <div class="hero-meta">
+            <span class="meta-item">📍 Sopore, J&K, India</span>
+            <span class="meta-item">🎸 Guitar • 📸 Photography</span>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-hidden="true">
+          <!-- Replace profile.jpg with your image in /assets/ -->
+          <img src="/Pictures/img.jpg" alt="Arbab Mujtaba — portrait" class="profile-photo" height="600">
+          
+          <div class="film-grain" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about container reveal">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I’m currently studying Computer Engineering at IET DAVV, Indore. I enjoy building desktop & web apps (Java, Swing, MySQL), prototyping networking tools, and learning low-level systems. I like vintage aesthetics — film cameras, vinyl, and warm tones.</p>
+          <p>My projects focus on clarity, usability, and learning: attendance systems, beginner network simulators, and small tooling that helps students and hobbyists.</p>
+          <p class="muted">Want to collaborate? Scroll down to contact or email me directly.</p>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat">
+            <div class="stat-num">2+</div>
+            <div class="stat-label">years coding</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">10+</div>
+            <div class="stat-label">projects</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">1</div>
+            <div class="stat-label">vintage Fender</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+<section id="projects" class="projects container reveal">
+  <h2 class="section-title">Selected Projects</h2>
+  <div class="projects-grid">
+    <!-- Project card: Attendance -->
+    <article class="project-card">
+      <figure class="thumb">
+        <img src="projects/attendance.png" alt="Attendance Management System screenshot" loading="lazy">
+      </figure>
+      <div class="project-body">
+        <h3>Attendance Management System</h3>
+        <p class="project-excerpt">Desktop Swing application with secure login, student CRUD, CSV export, and MySQL backend.</p>
+        <div class="project-meta">
+          <span class="tech">Java</span>
+          <span class="tech">MySQL</span>
+        </div>
+        <div class="project-actions">
+          <a class="link" href="#">View Source</a>
+          <a class="link" href="#">comming soon</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project card: Network Simulator -->
+    <article class="project-card">
+      <figure class="thumb">
+        <img src="projects/network.png" alt="Network Simulator screenshot" loading="lazy">
+      </figure>
+      <div class="project-body">
+        <h3>Beginner Network Simulator</h3>
+        <p class="project-excerpt">A friendly Python-based simulator to model simple networks, visualize packets and learn topologies.</p>
+        <div class="project-meta">
+          <span class="tech">Networking</span>
+        </div>
+        <div class="project-actions">
+          <a class="link" href="#">View Source</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project card: DSP Surround for Headphones -->
+    <article class="project-card">
+      <figure class="thumb">
+        <img src="projects/dsp-surround.png" alt="DSP Surround for Headphones screenshot" loading="lazy">
+      </figure>
+      <div class="project-body">
+        <h3>DSP Surround for Headphones</h3>
+        <p class="project-excerpt">Custom DSP processing chain that simulates spatial surround sound on stereo headphones for immersive listening.</p>
+        <div class="project-meta">
+          <span class="tech">C++</span>
+          <span class="tech">DSP</span>
+          <span class="tech">Audio Engineering</span>
+        </div>
+        <div class="project-actions">
+          <a class="link" href="#">Source Coming Soon</a>
+          <a class="link" href="https://github.com/evinjohnn/cafetone/releases/download/v1.0.0/cafetone.apk">Here a Demo</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project card: MoodMix — Spatial Audio DSP -->
+    <article class="project-card">
+      <figure class="thumb">
+        <img src="projects/MoodMix.png" alt="MoodMix Spatial Audio DSP screenshot" loading="lazy">
+      </figure>
+      <div class="project-body">
+        <h3>MoodMix — Spatial Audio DSP</h3>
+        <p class="project-excerpt">An adaptive DSP engine that changes spatial effects & EQ based on the mood of a track — calm, energetic, or dreamy.</p>
+        <div class="project-meta">
+          <span class="tech">DSP</span>
+          <span class="tech">Machine Learning</span>
+        </div>
+        <div class="project-actions">
+          <a class="link" href="https://github.com/arbabmujtaba/Mood-MIX.git">View Source</a>
+          <a class="link" href="#">Demo</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills container reveal">
+      <h2 class="section-title">Skills</h2>
+      <ul class="skill-list">
+        <li class="skill">
+          <div class="skill-head">
+            <strong>Java</strong><span class="skill-pct">90%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="--pct:90%"></div></div>
+        </li>
+        <li class="skill">
+          <div class="skill-head">
+            <strong>Python</strong><span class="skill-pct">80%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="--pct:80%"></div></div>
+        </li>
+        <li class="skill">
+          <div class="skill-head">
+            <strong>Networking</strong><span class="skill-pct">75%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="--pct:75%"></div></div>
+        </li>
+        <li class="skill">
+          <div class="skill-head">
+            <strong>Web (HTML/CSS/JS)</strong><span class="skill-pct">85%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="--pct:85%"></div></div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- NOTES (aesthetic quotes) -->
+    <section class="notes container reveal">
+      <h2 class="section-title">Some Favourite One's</h2>
+      <div class="notes-grid">
+        <blockquote class="note">"If you see me, you are not the target."</blockquote>
+        <blockquote class="note">"Deep inside, I feel like I’m losing you."</blockquote>
+        <blockquote class="note">"Rays in my life are Hushed."</blockquote>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact container reveal">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <form class="contact-form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
+          <label>
+            <span class="label-text">Name</span>
+            <input name="name" type="text" required>
+          </label>
+          <label>
+            <span class="label-text">Email</span>
+            <input name="email" type="email" required>
+          </label>
+          <label>
+            <span class="label-text">Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Send</button>
+            <a class="btn ghost" href="mailto:your-email@example.com">Or email me</a>
+          </div>
+        </form>
+
+        <aside class="contact-info" aria-label="Contact information">
+          <p class="muted">Prefer quick links?</p>
+          <p><strong>Email</strong><br><a href="mailto:Arbabmujtaba17@gmail.com" class="link">arbabmujtab17@gmail.com</a></p>
+          <p><strong>GitHub</strong><br><a href="https://github.com/arbabmujtaba" target="_blank" rel="noopener" class="link">github.com/arbabmujtaba</a></p>
+          <p><strong>LinkedIn</strong><br><a href="https://linkedin.com/in/arbab-mujtaba" target="_blank" rel="noopener" class="link">https://www.linkedin.com/in/arbab-mujtaba-6899b9277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app</a></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Arbab Mujtaba — All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
